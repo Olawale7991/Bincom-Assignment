@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="ola">
+            <h3>Olawale</h3>
+            <img src="./nav_underline.svg" alt="">
+        </div>
+
+        <img src="./menu_open.svg" onclick="openMenu()" alt="" class="nav-mob-open">
+
+        <ul id="nav-menu" class="nav-menu">
+            <img src="./menu_close.svg" onclick="closeMenu()" alt="" class="nav-mob-close">
+            <li>
+                <a class="anchor-link" href="#home" onclick="setMenu('home')">
+                    <p>Home</p>
+                </a>
+                <img id="underline-home" src="./nav_underline.svg" alt="" style="display: none;">
+            </li>
+            <li>
+                <a class="anchor-link" href="#about" onclick="setMenu('about')">
+                    <p>About Me</p>
+                </a>
+                <img id="underline-about" src="./nav_underline.svg" alt="" style="display: none;">
+            </li>
+            <li>
+                <a class="anchor-link" href="#services" onclick="setMenu('services')">
+                    <p>Services</p>
+                </a>
+                <img id="underline-services" src="path/to/nav_underline.svg" alt="" style="display: none;">
+            </li>
+            <li>
+                <a class="anchor-link" href="#work" onclick="setMenu('work')">
+                    <p>Portfolio</p>
+                </a>
+                <img id="underline-work" src="./nav_underline.svg" alt="" style="display: none;">
+            </li>
+            <li>
+                <a class="anchor-link" href="#contact" onclick="setMenu('contact')">
+                    <p>Contact</p>
+                </a>
+                <img id="underline-contact" src="./nav_underline.svg" alt="" style="display: none;">
+            </li>
+        </ul>
+
+        <div class="nav-connect">
+            <a class="anchor-link" href="#contact">Connect With Me</a>
+        </div>
+    </div>
+
+    <!-- Hero page -->
+
+    <body>
+        <div id="home" class="hero">
+            <img src="./copy.jpg" alt="">
+            <h1>
+                <span class="name">I'm Olawale Ridwan,</span> Full-Stack Developer based in Lagos, Nigeria.
+            </h1>
+            <p>I'm a MERN-Stack Developer from Lagos, Nigeria.</p>
+            <div class="hero-action">
+                <a class="anchor-link" href="#contact">
+                    <div class="hero-connect">Connect With Me</div>
+                </a>
+                <a class="hero-resume" href="./mern.pdf" target="_blank" rel="noopener noreferrer">
+                    My Resume
+                </a>
+            </div>
+        </div>
+
+        <!-- about page -->
+        <div id="about" class="about">
+            <div class="about-title">
+                <h1>About Me</h1>
+                <img src="./theme_pattern.svg" alt="">
+            </div>
+            <div class="about-section">
+                <div class="about-right">
+                    <div class="para">
+                        <p>I am a passionate web developer specializing in the MERN stack. With hands-on experience building e-commerce platforms and solving complex backend challenges, I focus on creating user-friendly, scalable solutions.</p>
+                        <p>I thrive in dynamic environments and am always eager to learn new technologies and contribute to impactful projects. My goal is to leverage my skills to help businesses grow through innovative web development.</p>
+                    </div>
+                    <div class="about-skills">
+                        <div class="about-skill"><p>HTML & CSS</p><hr style="width: 75%;"></div>
+                        <div class="about-skill"><p>React JS</p><hr style="width: 60%;"></div>
+                        <div class="about-skill"><p>Javascript</p><hr style="width: 50%;"></div>
+                        <div class="about-skill"><p>MongoDB</p><hr style="width: 60%;"></div>
+                        <div class="about-skill"><p>Node & Express</p><hr style="width: 60%;"></div>
+                        <div class="about-skill"><p>Postman API</p><hr style="width: 70%;"></div>
+                        <div class="about-skill"><p>Git & Github</p><hr style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="about-left">
+                    <img src="./photoshoot5.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-achievements">
+                <div class="about-achievement">
+                    <h1>0-1</h1>
+                    <p>YEARS OF EXPERIENCE</p>
+                </div>
+                <hr>
+                <div class="about-achievement">
+                    <h1>5+</h1>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- service page -->
+        <div id="services" class="services">
+            <div class="services-title">
+                <h1>My Services</h1>
+                <img src="./theme_pattern.svg" alt="">
+            </div>
+            <div class="services-container">
+                <div class="services-format">
+                    <h3>01</h3>
+                    <h2>Web Development</h2>
+                    <p>Building modern, responsive websites using the latest technologies.</p>
+                    <div class="services-readmore">
+                        <p>Read More</p>
+                        <img src="./arrow_icon.svg" alt="">
+                    </div>
+                </div>
+                <div class="services-format">
+                    <h3>02</h3>
+                    <h2>UI/UX Design</h2>
+                    <p>Designing intuitive and user-friendly interfaces.</p>
+                    <div class="services-readmore">
+                        <p>Read More</p>
+                        <img src="./arrow_icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- my work page-->
+        <div class="mywork">
+            <div class="mywork-title">
+                <h1>My Latest Work</h1>
+                <img src="./theme_pattern.svg" alt="">
+            </div>
+            <div class="mywork-container">
+                <a href="http://example.com/work1" target="_blank" rel="noopener noreferrer">
+                    <img src="./project_1.svg" alt="Work 1">
+                </a>
+                <a href="http://example.com/work2" target="_blank" rel="noopener noreferrer">
+                    <img src="./project_2.svg" alt="Work 2">
+                </a>
+                <a href="http://example.com/work3" target="_blank" rel="noopener noreferrer">
+                    <img src="./project_3.svg" alt="Work 3">
+                </a>
+            </div>
+            <div class="mywork-showmore">
+                <p>Show More</p>
+                <img src="./arrow_icon.svg" alt="">
+            </div>
+        </div>
+
+        <!-- contact page -->
+        <div id="contact" class="contact">
+            <div class="contact-title">
+                <h1>Get in touch</h1>
+                <img src="./theme_pattern.svg" alt="">
+            </div>
+            <div class="contact-section">
+                <div class="contact-left">
+                    <h1>Let's connect</h1>
+                    <p>I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact me anytime.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <img src="./mail_icon.svg" alt="">
+                            <p>olawaleridwan7991@gmail.com</p>
+                        </div>
+                        <div class="contact-detail">
+                            <img src="./location_icon.svg" alt="">
+                            <p>Lagos, Nigeria</p>
+                        </div>
+                        <div class="contact-detail">
+                            <img src="./call_icon.svg" alt="">
+                            <p>+234-70-6762-1077</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-right" action="https://formspree.io/f/xyzygjdw" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="e-mail" placeholder="Enter your e-mail" required>
+                    <label for="message">Write out your message here</label>
+                    <textarea name="message" rows="8" placeholder="Enter your message" required></textarea>
+                    <button type="submit" class="contact-submit">Submit Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer page -->
+
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <div class="olas">
+                        <h3>Olawale</h3>
+                        <img src="./nav_underline.svg" alt="">
+                    </div>
+                    <p>I am a full-stack developer specializing in the MERN stack. My goal is to leverage my skills to help businesses grow through innovative web development.</p>
+                </div>
+                <div class="footer-top-right">
+                    <div class="footer-email-input">
+                        <img src="./user_icon.svg" alt="">
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="footer-subscribe">Subscribe</div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p class="footer-bottom-left">&copy; 2024 Olawale Ridwan, All rights reserved.</p>
+                <div class="footer-bottom-right">
+                    <p>Terms of Service</p>
+                    <p>Privacy Policy</p>
+                    <p>Connect with me</p>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
