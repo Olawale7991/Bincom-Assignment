@@ -10,7 +10,7 @@ function closeMenu() {
 
 function setMenu(menu) {
     currentMenu = menu;
-    ['home', 'about', 'services', 'work', 'contact'].forEach((section) => {
+    ['home', 'about', 'services', 'memories', 'contact'].forEach((section) => {
         document.getElementById(`underline-${section}`).style.display = (menu === section) ? 'block' : 'none';
     });
 }
